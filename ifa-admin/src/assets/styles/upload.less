@@ -1,0 +1,62 @@
+.lupload_wraper{
+    .lw_preview{
+        li{
+            position: relative;
+            float: left;
+            width: 125px;
+            padding: 10px 5px;
+            padding-bottom: 0;
+            border: 1px solid #dbdbdb;
+            margin: 10px 10px 10px 0px;
+            box-sizing: border-box;
+            .delImg{
+                position: absolute;
+                z-index: 1;
+                right: 5px;
+                top: 5px;
+                width: 22px;
+                height: 22px;
+                cursor: pointer;
+            }
+            .img_wraper{
+                width: 100%;
+                height: 110px;
+                line-height: 110px;
+                overflow: hidden;
+                text-align: center;
+                font-size: 0;
+                .upedImg{
+                    display: inline-block;
+                    width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                }
+            }
+            p{
+                white-space: nowrap; 
+                overflow:hidden; 
+                text-overflow:ellipsis; 
+                font-size: 14px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+    }
+    .lw_btn{
+        position: relative;
+        input{
+            opacity: 0;
+            width: 80px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .el-upload__tip{
+            line-height: 14px;
+            padding-left: 10px;
+        }
+    }
+}

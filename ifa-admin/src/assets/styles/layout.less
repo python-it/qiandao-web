@@ -1,0 +1,389 @@
+#app {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* .suitElZindex{
+    position: relative;
+    z-index: 999999;
+} */
+
+.el-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.el-header,
+.el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+}
+
+.el-header{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    height: 102px!important;
+    padding: 20px;
+    background-color: #fff!important; 
+}
+
+.el-menu{
+    overflow: hidden;
+    border-right: none!important;
+}
+
+.el-aside {
+    background-color: #30416c!important;
+    color: #333;
+    text-align: center;
+    overflow: initial!important;
+}
+
+.el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: left;
+    padding-top: 0px!important;
+}
+
+.el-submenu__title, .el-menu-item{
+    text-align: left!important;
+    height: 36px!important;
+    line-height: 36px!important;
+    padding-left: 16px;
+    padding-right: 18px!important;
+}
+
+.el-menu-item{
+    padding-left: 34px!important;
+}
+
+.el-submenu__title:focus, .el-submenu__title:hover,.el-menu-item:focus, .el-menu-item:hover{
+    background-color: #39508f!important;
+}
+
+.el-menu-item-group ul{
+    overflow: hidden;
+}
+
+.el-submenu.is-active .el-submenu__title span{
+    color: #407bf2;
+}
+
+.layout_side_menu{
+    width: 100%;
+    padding-bottom: 74px;
+    padding-top: 225px;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: #30416c!important;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.hidScroll{
+    width: 236px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.layout_side_personInfo{
+    text-align: left;
+    width: 100%;
+    // height: 150px;
+    padding: 62px 16px 34px 16px;
+    border-bottom: 1px solid #344572;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #30416c!important;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    img{
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+    }
+    h2{
+        font-size: 24px;
+        color: #fff;
+        padding: 14px 0 8px 0;
+    }
+    span{
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        padding-right: 10px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            right: -10px;
+            top: 50%;
+            transform: translate(-50%);
+            width:0;
+            height:0;
+            border-width:4px 4px 0px 4px;
+            border-style: solid;
+            border-color: #fff transparent transparent transparent;
+        }
+    }
+}
+
+.layBreadCrumbs{
+    // padding: 0 20px;
+    padding: 14.5px 20px;
+    border: 20px solid #E9EEF3;
+    .el-breadcrumb__item:nth-child(1){
+        .el-breadcrumb__inner span{
+            color: #606266!important;
+        }
+    }
+    .el-col-4{
+        text-align: left;
+        width: 70px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #303133;
+        height: 19px;
+        line-height: 19px;
+    }
+    .el-breadcrumb{
+        height: 19px;
+        line-height: 19px;
+        .el-breadcrumb__separator{
+            color: #c0c4cc!important;
+        }
+        span{
+            color: #436dd4!important;
+            a{
+                color: #606266!important;
+                font-weight: normal!important;
+            }
+        }
+    }
+    // a,span{
+    //     color: #3e4d65;
+    // }
+    // .isActive{
+    //     .current_path{
+    //         color: #b77802;
+    //     }
+    // }
+    // .segment_line{
+    //     color: #333;
+    // }
+}
+
+.logo_wraper{
+    text-align: left;
+    .system_name{
+        font-size: 28px;
+        color: #436dd4;
+    }
+    .version{
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: #436dd4;
+        padding-top: 5px;
+    }
+    .grid-content{
+        display: inline-block;
+    }
+}
+.layout_tpwraper{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.layout_side_handle{
+    background-color: #30416c!important;
+    width: 216px;
+    height: 74px;
+    border-top: 1px solid #15203b;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    .lsh_wraper{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        padding: 0 20px 0 16px;
+        box-sizing: border-box;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        .login_out{
+            // display: inline-block;
+            height: 100%;
+            font-size: 12px;
+            text-align: right;
+            padding-right: 20px;
+            float: left;
+            color: #fff;
+            cursor: pointer;
+            width: 135px;
+            line-height: 25px;
+            border-radius: 25px;
+            background: #436dd4;
+            position: relative;
+            box-sizing: border-box;
+            &::before{
+                content: "";
+                background-image: url("../images/jiantou.png");
+                background-color: #2859da;
+                border-radius: 18px;
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 3px;
+                top: 50%;
+                margin-top: -9px;
+                background-size: contain;
+            }
+        }
+        .system_setting{
+            // display: inline-block;
+            height: 100%;
+            width: 25px;
+            line-height: 25px;
+            vertical-align: middle;
+            text-align: center;
+            background: #fff;
+            color: #fff;
+            float: right;
+            border-radius: 25px;
+            cursor: pointer;
+            overflow: hidden;
+            img{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                // border-radius: 16px;
+                // margin-left: -0.1px;
+                // vertical-align: middle;
+            }
+        }
+    }
+}
+
+/* animate动画 */
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: 102px;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: 102px;
+    }
+  }
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  @-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+      height: 102px;
+    }
+    to {
+      opacity: 0;
+      height: 0px;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      height: 102px;
+    }
+    to {
+      opacity: 0;
+      height: 0px;
+    }
+  }
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+
+  @-webkit-keyframes fadeIn62 {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: 62px;
+    }
+  }
+  @keyframes fadeIn62 {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: 62px;
+    }
+  }
+  .fadeIn62 {
+    -webkit-animation-name: fadeIn62;
+    animation-name: fadeIn62;
+  }
+  @-webkit-keyframes fadeOut62 {
+    from {
+      opacity: 1;
+      height: 62px;
+    }
+    to {
+      opacity: 0;
+      height: 0px;
+    }
+  }
+  @keyframes fadeOut62 {
+    from {
+      opacity: 1;
+      height: 62px;
+    }
+    to {
+      opacity: 0;
+      height: 0px;
+    }
+  }
+  .fadeOut62 {
+    -webkit-animation-name: fadeOut62;
+    animation-name: fadeOut62;
+  }
